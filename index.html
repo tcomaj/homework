@@ -44,8 +44,11 @@
     <div id="subs-option-template" style="display: none;">
         <div class="option SELECTEDCLASS" id="option-INDEX" onclick='selectOption("INDEX")'>
             <div class="column-mobile-10 column-desktop-6 space-under-mobile">
-                <input type="radio" id="subs-length-INDEX" name="subs-length" value="VALUE" checked=''>
-                <label class="RECOMMENDED" for="subs-length-INDEX">NAME</label>
+                
+                <label class="RECOMMENDED rb-custom-container" for="subs-length-INDEX">NAME
+                    <input type="radio" class="rb-custom" id="subs-length-INDEX" name="subs-length" value="VALUE" checked=''>
+                    <span class="rb-custom-checkmark"></span>
+                </label>
             </div>
             <div class="column-mobile-5 column-desktop-2">
                 <p class="price-monthly">PRICEMONTHLY / month</p>
