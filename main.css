@@ -107,6 +107,12 @@ body {
     background-color: #37C882;
 }
 
+.footer-text {
+    color: #E1DEE9;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
 /* mobile width */
 @media screen and (max-width: 1008px) {    
     .space-under-mobile {
