@@ -11,8 +11,44 @@
 </head>
 
 <body>
-    <div class="ipm-ui">
-        <!-- HTML content goes here -->
+    <div id="main-div">
+        <div class="container">
+            <h1 class="main-header">Please choose the length of your plan</h1>
+            <div class="info-list">
+                <h2 class="info-header">Avast Driver Updater</h2>
+                <ul class="list">
+                    <li><i class="tick">&nbsp;</i>Auto-scan your computer for outdated, missing or corrupt drivers</li>
+                    <li><i class="tick">&nbsp;</i>Check more than 500,000 drivers and software updates</li>
+                    <li><i class="tick">&nbsp;</i>Keep your PC and devices running optimally with one click</li>
+                </ul>
+            </div>
+            <form>
+                <div class="select-options" id="subs-options-data">
+                    <!--Generated data here-->
+                </div>
+                <div class="row">
+                    <div class="column-desktop-10 column-mobile-10 text-center">
+                        <button type="button" class="buy-button" onclick="buy()">BUY NOW</button>
+                    </div>
+                </div>
+                
+            </form>
+        </div>       
+    </div>
+
+    <div id="subs-option-template" style="display: none;">
+        <div class="option SELECTEDCLASS" id="option-INDEX" onclick='selectOption("INDEX")'>
+            <div class="column-mobile-10 column-desktop-6 space-under-mobile">
+                <input type="radio" id="subs-length-INDEX" name="subs-length" value="VALUE" checked=''>
+                <label class="RECOMMENDED" for="subs-length-INDEX">NAME</label>
+            </div>
+            <div class="column-mobile-5 column-desktop-2">
+                <p class="price-monthly">PRICEMONTHLY / month</p>
+            </div>
+            <div class="column-mobile-5 column-desktop-2">
+                <p class="price-yearly">Billed as PRICEYEARLY / LENGTH</p>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -20,15 +56,24 @@
             planSelector: [{
                 monthlyPrice: '$0.99',
                 yearlyPrice: '$11.88',
+                name: '1-year subscription',
+                length: '1 year',
+                recommended: false,
                 url: 'https://url-1-year.com'
 
             }, {
                 monthlyPrice: '$1.99',
                 yearlyPrice: '$23.88',
+                name: '2-years subscription',
+                length: '2 years',
+                recommended: true,
                 url: 'https://url-2-years.com'
             }, {
                 monthlyPrice: '$2.99',
                 yearlyPrice: '$35.88',
+                name: '3-years subscription',
+                length: '3 years',
+                recommended: false,
                 url: 'https://url-3-years.com'
             }]
         };

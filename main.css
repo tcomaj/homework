@@ -1,5 +1,281 @@
-.ipm-ui {
-    width: 1008px;
-    height: 632px;
-    background: salmon;
+body {
+    color: #fff;
+    font-family: arial;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.row {
+    width: 100%;
+    display: block;
+    margin-right: -10px;
+    margin-left: -10px;
+    overflow: hidden;
+}
+#main-div {    
+    min-height: 557px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    background: #a1a1a5;
+    background: linear-gradient(135deg, #0d053f 0%, #2b1f71 90%);   
+}
+
+.main-header {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-weight: bold;    
+    font-size: 30px;
+}
+
+.info-list {
+    width: auto;
+    padding: 50px 25px;
+    list-style: none;
+}
+
+.info-list .info-header {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info-list .list li{
+    margin-top: 20px;
+    color: #A29DB7;
+    font-weight: bold;
+}
+
+.tick {
+    background-image: url("images/tick.svg");
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-position: -3px -4px;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+.select-options .option {
+    padding: 20.4px 0; 
+    overflow:hidden;
+    border-bottom: solid 1px #433C78;
+    cursor: pointer;
+}
+
+.select-options .option:first-child {    
+    border-top: solid 1px #433C78;
+    padding: 20px 0; 
+}
+
+.select-options .option.selected {
+    padding: 20px 0; 
+    margin: -0.8px;
+    border: solid 1px #429BF9;   
+}
+
+.select-options .option:first-child.selected {    
+   margin-top: 0;
+}
+
+.select-options .option:nth-child(2n) {
+    background-color: #aaaaaa21;
+}
+
+.select-options .option label, .select-options .option input {
+    cursor: pointer;
+}
+
+.price-monthly {
+    color: #42D897;
+}
+
+.buy-button {
+    background-color: #44ED9C;
+    border: none;
+    color: #000;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px 0;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color: #37C882;
+}
+
+/* mobile width */
+@media screen and (max-width: 1008px) {    
+    .space-under-mobile {
+        margin-bottom: 10px;
+    }
+    .container {
+        width: auto;        
+    }
+    .column-mobile-1 {
+        float: left;
+        position: relative;
+        box-sizing: border-box;         
+        padding: 0 10px;        
+        width: 10%;
+    }
+    .column-mobile-2 {
+        float: left;
+        position: relative;
+        box-sizing: border-box;         
+        padding: 0 10px;
+        width: 20%;
+    }
+    .column-mobile-3 {
+        float: left;
+        position: relative;
+        box-sizing: border-box;         
+        padding: 0 10px; 
+        width: 30%;
+    }
+    .column-mobile-4 {
+        float: left;
+        position: relative;
+        box-sizing: border-box;         
+        padding: 0 10px;
+        width: 40%;
+    }
+    .column-mobile-5 {
+        float: left;
+        position: relative;
+        box-sizing: border-box;         
+        padding: 0 10px;
+        width: 50%;
+    }
+    .column-mobile-6 {
+        float: left;
+        position: relative;
+        box-sizing: border-box;         
+        padding: 0 10px;
+        width: 60%;
+    }
+    .column-mobile-7 {
+        float: left;
+        position: relative;
+        box-sizing: border-box;         
+        padding: 0 10px;
+        width: 70%;
+    }
+    .column-mobile-8 {
+        float: left;
+        position: relative;
+        box-sizing: border-box;         
+        padding: 0 10px;
+        width: 80%;
+    }
+    .column-mobile-9 {
+        float: left;
+        position: relative;
+        box-sizing: border-box;         
+        padding: 0 10px;
+        width: 90%;
+    }
+    .column-mobile-10 {
+        float: left;
+        position: relative;
+        box-sizing: border-box;         
+        padding: 0 10px;
+        width: 100%;
+    }
+}
+
+.recommended::after {   
+    content: "RECOMMENDED";
+    margin-left: 12px;
+    padding: 7px 10px;
+    box-sizing: border-box;
+    background-color: #593AFF;
+    line-height: 8px;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* desktop width */
+@media screen and (min-width: 1009px) {
+    .container {
+        width: 1008px;        
+    }
+    .column-desktop-1 {
+        float: left;
+        position: relative;
+        box-sizing: border-box;         
+        padding: 0 10px;
+        width: 10%;
+    }
+    .column-desktop-2 {
+        float: left;
+        position: relative;
+        box-sizing: border-box;         
+        padding: 0 10px;
+        width: 20%;
+    }
+    .column-desktop-3 {
+        float: left;
+        position: relative;
+        box-sizing: border-box;         
+        padding: 0 10px;
+        width: 30%;
+    }
+    .column-desktop-4 {
+        float: left;
+        position: relative;
+        box-sizing: border-box;         
+        padding: 0 10px;
+        width: 40%;
+    }
+    .column-desktop-5 {
+        float: left;
+        position: relative;
+        box-sizing: border-box;         
+        padding: 0 10px;
+        width: 50%;
+    }
+    .column-desktop-6 {
+        float: left;
+        position: relative;
+        box-sizing: border-box; 
+        padding: 0 10px;
+        width: 60%;
+    }
+    .column-desktop-7 {
+        float: left;
+        position: relative;
+        box-sizing: border-box;         
+        padding: 0 10px;
+        width: 70%;
+    }
+    .column-desktop-8 {
+        float: left;
+        position: relative;
+        box-sizing: border-box;         
+        padding: 0 10px;
+        width: 80%;
+    }
+    .column-desktop-9 {
+        float: left;
+        position: relative;
+        box-sizing: border-box;         
+        padding: 0 10px;
+        width: 90%;
+    }
+    .column-desktop-10 {
+        float: left;
+        position: relative;
+        box-sizing: border-box;         
+        padding: 0 10px;
+        width: 100%;
+    }
 }
